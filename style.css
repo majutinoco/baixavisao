@@ -1,109 +1,103 @@
-body{
-
-font-family: Arial, sans-serif;
-font-size:18px;
-margin:0;
-background:#f4f4f4;
-color:#222;
-
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    background: #f4f4f4;
+    color: #222;
+    line-height: 1.6;
 }
 
-header{
-
-background:#0056b3;
-color:white;
-padding:20px;
-text-align:center;
-
+header {
+    background: #0056b3;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-nav{
-
-background:#003d80;
-padding:12px;
-text-align:center;
-
+nav {
+    background: #003d80;
+    padding: 12px;
+    text-align: center;
 }
 
-nav a{
-
-color:white;
-text-decoration:none;
-margin:15px;
-font-weight:bold;
-
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px 15px;
+    font-weight: bold;
+    display: inline-block;
 }
 
-section{
-
-background:white;
-margin:20px;
-padding:20px;
-border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,.1);
-
+section {
+    background: white;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
-button{
-
-padding:10px 15px;
-margin:5px;
-font-size:16px;
-cursor:pointer;
-
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
-img{
-
-max-width:100%;
-border-radius:10px;
-
+.card-imagem {
+    text-align: center;
+    margin: 20px 0;
 }
 
-footer{
-
-background:#0056b3;
-color:white;
-text-align:center;
-padding:15px;
-margin-top:20px;
-
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
-.contraste{
-
-background:black;
-color:white;
-
+ul {
+    padding-left: 20px;
 }
 
-.contraste section{
-
-background:#111;
-color:white;
-
+li {
+    margin-bottom: 8px;
 }
 
-.contraste nav{
-
-background:black;
-
+footer {
+    background: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
 
-.contraste header{
-
-background:black;
-
+/* Modo Alto Contraste */
+.contraste {
+    background: black;
+    color: yellow;
 }
 
-.contraste footer{
-
-background:black;
-
+.contraste section {
+    background: #111;
+    color: yellow;
+    border: 1px solid yellow;
 }
 
-.contraste a{
+.contraste nav, 
+.contraste header, 
+.contraste footer {
+    background: black;
+    border-bottom: 1px solid yellow;
+}
 
-color:yellow;
+.contraste a {
+    color: yellow;
+}
 
+.contraste button {
+    background: yellow;
+    color: black;
 }
