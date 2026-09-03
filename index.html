@@ -3,8 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baixa Visão e Acessibilidade</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Baixa Visão e Acessibilidade Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 50%, #f48fb1 100%);
+            color: #4a148c;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ad1457, #d81b60);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            box-shadow: 0 4px 15px rgba(173, 20, 87, 0.3);
+        }
+
+        header h1 {
+            font-family: 'Fredoka', cursive;
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #ffffff;
+            padding: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #ad1457;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+
+        nav a:hover {
+            background-color: #f8bbd0;
+            color: #880e4f;
+        }
+
+        .acessibilidade-botoes {
+            display: flex;
+            gap: 8px;
+            margin-left: 10px;
+        }
+
+        .acessibilidade-botoes button {
+            background-color: #d81b60;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            font-weight: bold;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #ffffff;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(173, 20, 87, 0.1);
+            border-left: 6px solid #d81b60;
+        }
+
+        h2 {
+            font-family: 'Fredoka', cursive;
+            color: #ad1457;
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            font-family: 'Fredoka', cursive;
+            color: #c2185b;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .perfil-container {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .foto-perfil {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #d81b60;
+            box-shadow: 0 4px 12px rgba(173, 20, 87, 0.25);
+        }
+
+        .biografia {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ad1457;
+            color: white;
+            margin-top: 40px;
+        }
+
+        body.contraste {
+            background: #000000 !important;
+            color: #ffff00 !important;
+        }
+
+        body.contraste header, 
+        body.contraste nav, 
+        body.contraste section, 
+        body.contraste footer {
+            background: #121212 !important;
+            color: #ffff00 !important;
+            border-color: #ffff00 !important;
+        }
+
+        body.contraste nav a, 
+        body.contraste h2, 
+        body.contraste h3 {
+            color: #ffff00 !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -32,33 +200,48 @@
         <section id="problema">
             <h2>O Problema da Baixa Visão</h2>
             <p>
-                A baixa visão é uma condição em que a pessoa possui uma perda severa da visão que não pode ser totalmente corrigida com óculos comuns, lentes de contato ou cirurgia. Isso dificulta tarefas diárias como ler, reconhecer rostos e navegar na web.
+                A baixa visão é uma condição visual que não pode ser totalmente corrigida com óculos comuns, lentes de contato ou procedimentos cirúrgicos. Pessoas com baixa visão enfrentam dificuldades significativas na leitura, no reconhecimento de rostos, na navegação na web e na realização de tarefas do dia a dia.
             </p>
         </section>
 
         <section id="solucao">
-            <h2>Soluções de Acessibilidade</h2>
+            <h2>Soluções de Acessibilidade Digital</h2>
             <p>
-                Para garantir a inclusão de pessoas com baixa visão, utilizamos recursos tecnológicos como leitores de tela, lupas eletrônicas, contraste aprimorado e fontes ajustáveis que facilitam a leitura.
+                Para garantir a inclusão e a autonomia de pessoas com baixa visão no meio digital, é fundamental aplicar práticas de acessibilidade web. Recursos como contraste adequado de cores, ampliação de fontes, leitores de tela e estrutura clara de conteúdo permitem que todos naveguem com independência.
             </p>
         </section>
 
         <section id="camera">
-            <h2>Câmera de Segurança</h2>
+            <h2>Câmera de Segurança e Acessibilidade</h2>
             <p>
-                As câmeras de segurança desempenham um papel essencial na acessibilidade e proteção. Equipadas com sensores de imagem e recursos infravermelhos, elas permitem o monitoramento em tempo real e auxiliam no reconhecimento do ambiente.
+                As câmeras de segurança desempenham um papel fundamental no monitoramento e na segurança dos ambientes. Para pessoas com baixa visão, sistemas integrados de monitoramento com alertas sonoros ou ampliações em tempo real ajudam no reconhecimento do espaço e na prevenção de riscos.
             </p>
+            <h3>Principais Componentes de uma Câmera:</h3>
+            <ul>
+                <li><strong>Lente:</strong> Capta a luz e foca a imagem no sensor interno.</li>
+                <li><strong>Sensor de Imagem (CCD/CMOS):</strong> Converte a luz captada em sinais elétricos digitais.</li>
+                <li><strong>LEDs Infravermelhos:</strong> Permitem a visão noturna e captação de imagem em ambientes escuros.</li>
+                <li><strong>Processador de Sinal (DSP):</strong> Trata a imagem para otimizar nitidez e contraste.</li>
+            </ul>
         </section>
 
         <section id="datashow">
-            <h2>Datashow (Projetor)</h2>
+            <h2>Datashow (Projetor Multimídia)</h2>
             <p>
-                O datashow é um dispositivo capaz de ampliar apresentações, documentos e vídeos em grande escala, facilitando a visualização por pessoas com baixa visão em ambientes educacionais e profissionais.
+                O datashow é uma ferramenta indispensável em salas de aula e ambientes de trabalho. Ao projetar conteúdos em grande escala, ele facilita significativamente a leitura e a visualização de apresentações para estudantes e profissionais com baixa visão.
             </p>
+            <h3>Principais Componentes do Datashow:</h3>
+            <ul>
+                <li><strong>Lâmpada / Fonte de Luz (LED/Laser):</strong> Fornece a iluminação necessária para projetar a imagem.</li>
+                <li><strong>Painel de Exibição (LCD/DLP):</strong> Gera a imagem com base no sinal de vídeo recebido.</li>
+                <li><strong>Conjunto de Lentes de Foco e Zoom:</strong> Ajusta o tamanho e a nitidez da imagem na tela de projeção.</li>
+                <li><strong>Sistema de Refrigeração (Ventoinhas):</strong> Evita o superaquecimento dos componentes internos.</li>
+            </ul>
         </section>
 
         <section id="video">
             <h2>Vídeo Explicativo</h2>
+            <p>Assista ao vídeo abaixo para entender mais sobre como a tecnologia assistiva transforma a rotina de quem possui baixa visão:</p>
             <div class="video-container">
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo sobre Acessibilidade" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -67,11 +250,10 @@
         <section id="tecnologias">
             <h2>Tecnologias Assistivas</h2>
             <p>
-                Ferramentas de tecnologia assistiva transformam a experiência digital. Elas adaptam conteúdos para que qualquer pessoa possa navegar com autonomia e independência.
+                As tecnologias assistivas abrangem softwares, dispositivos e ferramentas que promovem a inclusão. Desde lupas eletrônicas e teclados adaptados até sistemas de comando por voz, essas inovações garantem acesso igualitário à informação e à educação.
             </p>
         </section>
 
-        <!-- Seção Sobre a Autora -->
         <section id="sobre">
             <h2>Sobre a Autora</h2>
             <div class="perfil-container">
