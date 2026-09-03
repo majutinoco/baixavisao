@@ -1,21 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilo Geral da Página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     font-size: 18px;
     margin: 0;
-    background: #f4f4f4;
-    color: #222;
+    background: #fdf0f4; /* Rosa bem claro e suave */
+    color: #2d1a24;     /* Vinho escuro para garantir excelente contraste na leitura */
     line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+/* Títulos com a fonte Impact (estilo Meme) */
+h1, h2, h3 {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Cabeçalho */
 header {
-    background: #0056b3;
+    background: #d63384; /* Rosa vibrante */
     color: white;
-    padding: 20px;
+    padding: 25px 20px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.2rem;
+}
+
+/* Menu de Navegação e Botões de Acessibilidade */
 nav {
-    background: #003d80;
+    background: #a21b5f; /* Rosa escuro/Vinho para destacar a navegação */
     padding: 12px;
     text-align: center;
 }
@@ -23,30 +42,52 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 10px 15px;
-    font-weight: bold;
+    margin: 8px 12px;
+    font-weight: 600;
     display: inline-block;
+    transition: color 0.2s;
 }
 
-section {
-    background: white;
-    margin: 20px auto;
-    max-width: 900px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,.1);
+nav a:hover {
+    color: #ffc2d1;
 }
 
+/* Botões do Painel de Acessibilidade */
 button {
-    padding: 10px 15px;
+    padding: 10px 16px;
     margin: 5px;
     font-size: 16px;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
+    background: #ff85a1; /* Rosa claro vibrante */
+    color: #4a001e;      /* Vinho escuro para acessibilidade de contraste no botão */
+    transition: background 0.2s, transform 0.1s;
 }
 
+button:hover {
+    background: #ff6b8b;
+    transform: scale(1.03);
+}
+
+/* Seções de Conteúdo */
+section {
+    background: #ffffff;
+    margin: 25px auto;
+    max-width: 900px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(214, 51, 132, 0.08);
+    border-left: 6px solid #d63384; /* Detalhe lateral em rosa */
+}
+
+section h2 {
+    color: #a21b5f;
+    margin-top: 0;
+}
+
+/* Imagens e Vídeo */
 .card-imagem {
     text-align: center;
     margin: 20px 0;
@@ -58,46 +99,52 @@ img {
     border-radius: 10px;
 }
 
+/* Listas */
 ul {
     padding-left: 20px;
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
+/* Rodapé */
 footer {
-    background: #0056b3;
+    background: #a21b5f;
     color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 20px;
+    margin-top: 30px;
 }
 
-/* Modo Alto Contraste */
+/* Modo Alto Contraste (Preservado para Acessibilidade) */
 .contraste {
-    background: black;
-    color: yellow;
+    background: black !important;
+    color: yellow !important;
 }
 
 .contraste section {
-    background: #111;
-    color: yellow;
-    border: 1px solid yellow;
+    background: #111 !important;
+    color: yellow !important;
+    border: 1px solid yellow !important;
+    border-left: 6px solid yellow !important;
 }
 
 .contraste nav, 
 .contraste header, 
 .contraste footer {
-    background: black;
-    border-bottom: 1px solid yellow;
+    background: black !important;
+    border-bottom: 1px solid yellow !important;
 }
 
+.contraste h1, 
+.contraste h2, 
+.contraste h3, 
 .contraste a {
-    color: yellow;
+    color: yellow !important;
 }
 
 .contraste button {
-    background: yellow;
-    color: black;
+    background: yellow !important;
+    color: black !important;
 }
