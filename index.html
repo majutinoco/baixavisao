@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baixa Visão e Acessibilidade Digital</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Oswald:wght@500;700&family=Grand+Hotel&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-    <h1>Baixa Visão e Acessibilidade Digital</h1>
+    <h1>Baixa Visão & Acessibilidade Digital</h1>
 
     <div class="botoes">
-        <button onclick="aumentarFonte()">A+</button>
-        <button onclick="diminuirFonte()">A-</button>
+        <button onclick="aumentarFonte()" title="Aumentar Fonte">A+</button>
+        <button onclick="diminuirFonte()" title="Diminuir Fonte">A-</button>
         <button onclick="altoContraste()">Alto Contraste</button>
     </div>
 </header>
@@ -21,6 +26,7 @@
 <nav>
     <a href="#problema">Problema</a>
     <a href="#solucao">Solução</a>
+    <a href="#video">Vídeo Explicativo</a>
     <a href="#camera">Câmera</a>
     <a href="#datashow">Datashow</a>
     <a href="#tecnologias">Tecnologias</a>
@@ -40,6 +46,19 @@
     <p>
     Oferecer alternativas em texto legível para imagens, permitir ampliação do tamanho da fonte e disponibilizar modos de alto contraste garantem autonomia a todas as pessoas.
     </p>
+</section>
+
+<section id="video">
+    <h2>Barreiras Invisíveis e Soluções Reais</h2>
+    <p>Assista ao vídeo complementar sobre como a acessibilidade transforma a experiência digital de quem possui baixa visão:</p>
+    <div class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/nBbATqzYu0Y" 
+            title="Barreiras invisíveis e soluções reais: acessibilidade como motor de mudança" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
 </section>
 
 <section id="camera">
@@ -86,27 +105,4 @@
         <li><strong>8. Filtro de Ar:</strong> Impede a entrada de poeira e partículas no aparelho.</li>
         <li><strong>9. Conexões:</strong> Entradas HDMI, VGA, USB, Áudio e Rede.</li>
         <li><strong>10. Alto-Falante:</strong> Reproduz o áudio do conteúdo exibido.</li>
-        <li><strong>11. Painel de Controle:</strong> Permite navegar pelos menus e configurar o projetor.</li>
-    </ul>
-</section>
-
-<section id="tecnologias">
-    <h2>Tecnologias Assistivas</h2>
-    <ul>
-        <li>Lupas digitais e ampliadores de tela</li>
-        <li>Projetores para ampliação de apresentações</li>
-        <li>Leitores de tela para transcrição de texto</li>
-        <li>Modos de alto contraste para telas digitais</li>
-    </ul>
-</section>
-
-</main>
-
-<footer>
-    <p>Projeto desenvolvido para a disciplina de Programação Web.</p>
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+        <li><strong>11. Painel de Controle:</strong>
